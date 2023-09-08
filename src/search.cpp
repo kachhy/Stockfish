@@ -784,6 +784,8 @@ namespace {
     // This is possible due to the strength of the neural network.
     else if (ss->ply == 2
         && !improving
+        && !ss->inCheck
+        && eval < beta
         && (ss - 1)->staticEval - ss->staticEval > 78)
         return eval;
 
