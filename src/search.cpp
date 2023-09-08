@@ -790,7 +790,6 @@ namespace {
         && (ss - 1)->staticEval - ss->staticEval > 78)
         return eval;
 
-
     // Step 9. Null move search with verification search (~35 Elo)
     if (   !PvNode
         && (ss-1)->currentMove != MOVE_NULL
